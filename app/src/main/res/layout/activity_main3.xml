@@ -12,13 +12,22 @@
         android:id="@+id/imag"
         android:layout_width="300dp"
         android:layout_height="400dp"
-        android:layout_marginBottom="30dp"/>
+        android:src="@drawable/test"
+        android:layout_marginBottom="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kacper Koszelak"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/napis"
+        android:layout_below="@+id/imag" />
 
     <SeekBar
         android:layout_width="300dp"
         android:layout_height="30dp"
         android:id="@+id/seekbar1"
-        android:layout_below="@+id/imag" />
+        android:max="255"
+        android:layout_below="@+id/napis" />
 
     <CheckBox
         android:id="@+id/redCheckBox"
@@ -46,6 +55,7 @@
         android:layout_width="230dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/seekbar1"
+        android:max="255"
         android:layout_marginStart="10dp"
         android:layout_marginTop="15dp"
         android:layout_toEndOf="@+id/redCheckBox" />
@@ -55,6 +65,7 @@
         android:layout_width="230dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/redSeekBar"
+        android:max="255"
         android:layout_marginStart="10dp"
         android:layout_marginTop="30dp"
         android:layout_toEndOf="@+id/greenCheckBox" />
@@ -64,6 +75,7 @@
         android:layout_width="230dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/greenSeekBar"
+        android:max="255"
         android:layout_marginStart="10dp"
         android:layout_marginTop="30dp"
         android:layout_toEndOf="@+id/blueCheckBox" />
