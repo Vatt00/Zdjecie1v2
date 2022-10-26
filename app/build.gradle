@@ -28,6 +28,7 @@ android {
     buildFeatures {
         viewBinding true
     }
+    namespace 'com.taboret.zdjecie1'
 }
 
 dependencies {
